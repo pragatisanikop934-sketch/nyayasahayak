@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyaya Sahayak | Legal Aid & Rights Awareness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">⚖️ Nyaya Sahayak</div>
+  <select id="language" aria-label="Choose language">
+    <option value="en">English</option>
+    <option value="kn">Kannada</option>
+    <option value="hi">Hindi</option>
+    <option value="te">Telugu</option>
+    <option value="ta">Tamil</option>
+    <option value="ml">Malayalam</option>
+    <option value="mr">Marathi</option>
+    <option value="bn">Bengali</option>
+    <option value="pa">Punjabi</option>
+    <option value="ur">Urdu</option>
+  </select>
+</header>
+
+<nav class="navbar">
+  <a href="#home" data-i18n="navHome">Home</a>
+  <a href="#rights" data-i18n="navRights">Know Your Rights</a>
+  <a href="#complaint" data-i18n="navComplaint">Report a Problem</a>
+  <a href="#constitution" data-i18n="navLearn">Learn Constitution</a>
+  <a href="#faq" data-i18n="navFaq">FAQs</a>
+  <a href="#helplines" data-i18n="navHelpline">Helplines</a>
+</nav>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1 data-i18n="heroTitle">Justice and Legal Awareness for Everyone</h1>
+    <p data-i18n="heroText">
+      Understand your rights. Find guidance. Raise your voice.
+      Legal awareness made simple, accessible and inclusive.
+    </p>
+    <a href="#complaint" class="btn" data-i18n="heroBtn">Explain Your Problem</a>
+    <a href="#rights" class="btn secondary" data-i18n="heroBtn2">Explore Your Rights</a>
+  </div>
+</section>
+
+<section class="section" id="rights">
+  <h2 data-i18n="rightsTitle">Know Your Rights</h2>
+  <p data-i18n="rightsText">Learn about important rights through simple explanations.</p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>📜 Fundamental Rights</h3>
+      <p>Learn about equality, freedom, protection and constitutional rights guaranteed by the Indian Constitution.</p>
+    </article>
+
+    <article class="card">
+      <h3>👩 Women's Rights</h3>
+      <p>Understand laws and protections concerning safety, equality, workplace rights and domestic violence.</p>
+    </article>
+
+    <article class="card">
+      <h3>💻 Cyber Rights</h3>
+      <p>Learn how to respond to cyber fraud, online harassment, identity theft and digital scams.</p>
+    </article>
+
+    <article class="card">
+      <h3>🛒 Consumer Rights</h3>
+      <p>Understand your rights against unfair trade practices, defective goods and misleading advertisements.</p>
+    </article>
+
+    <article class="card">
+      <h3>🏠 Property Rights</h3>
+      <p>Learn basic information about property disputes, tenancy and legal documentation.</p>
+    </article>
+
+    <article class="card">
+      <h3>👷 Labour Rights</h3>
+      <p>Learn about wages, workplace safety, working conditions and employee protections.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section complaint-section" id="complaint">
+  <h2 data-i18n="complaintTitle">Report Your Problem</h2>
+  <p data-i18n="complaintText">
+    Describe your issue in your own language. This prototype helps
+    organize your information for guidance.
+  </p>
+
+  <form id="complaintForm">
+
+    <label for="userLanguage">Preferred Language</label>
+    <select id="userLanguage" name="userLanguage">
+      <option>English</option>
+      <option>Kannada</option>
+      <option>Hindi</option>
+      <option>Telugu</option>
+      <option>Tamil</option>
+      <option>Malayalam</option>
+      <option>Marathi</option>
+      <option>Bengali</option>
+      <option>Punjabi</option>
+      <option>Urdu</option>
+    </select>
+
+    <label for="category">Problem Category</label>
+    <select id="category" name="category" required>
+      <option value="">Select a category</option>
+      <option>Women's Rights</option>
+      <option>Cyber Crime</option>
+      <option>Consumer Complaint</option>
+      <option>Property Dispute</option>
+      <option>Labour Issue</option>
+      <option>Family Issue</option>
+      <option>Other</option>
+    </select>
+
+    <label for="description">Explain Your Problem</label>
+    <textarea id="description" name="description" rows="5"
+      placeholder="Write or describe your problem here..." required></textarea>
+
+    <div class="voice-box">
+      <h3>🎤 Voice Assistance</h3>
+      <p>You can record your explanation instead of typing.</p>
+      <button type="button" id="recordBtn" class="btn">Start Recording</button>
+      <p id="recordStatus">Recording not started.</p>
+      <audio id="audioPlayback" controls hidden></audio>
+    </div>
+
+    <label for="attachments">Upload Photos or Videos (optional)</label>
+    <input type="file" id="attachments" name="attachments"
+      accept="image/*,video/*" multiple>
+
+    <label class="consent">
+      <input type="checkbox" id="consent" required>
+      I understand that this website is an awareness prototype and
+      is not an official complaint filing service.
+    </label>
+
+    <button type="submit" class="btn">Submit Information</button>
+    <p id="formMessage"></p>
+  </form>
+</section>
+
+<section class="section" id="constitution">
+  <h2 data-i18n="constitutionTitle">Learn the Indian Constitution</h2>
+
+  <div class="cards">
+    <article class="card">
+      <h3>🇮🇳 The Preamble</h3>
+      <p>Discover the ideals of justice, liberty, equality and fraternity.</p>
+    </article>
+
+    <article class="card">
+      <h3>📖 Fundamental Rights</h3>
+      <p>Understand the fundamental rights and their importance in everyday life.</p>
+    </article>
+
+    <article class="card">
+      <h3>🤝 Fundamental Duties</h3>
+      <p>Learn about the responsibilities of citizens under the Constitution.</p>
+    </article>
+
+    <article class="card">
+      <h3>🏛️ Government Structure</h3>
+      <p>Understand the roles of the legislature, executive and judiciary.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="helplines">
+  <h2 data-i18n="helplineTitle">Important Helplines</h2>
+
+  <div class="cards">
+    <article class="card">
+      <h3>🚨 Emergency</h3>
+      <p><strong>112</strong></p>
+      <p>Emergency response assistance.</p>
+      <a href="https://112.gov.in/">Official Website</a>
+    </article>
+
+    <article class="card">
+      <h3>💻 Cyber Crime</h3>
+      <p><strong>1930</strong></p>
+      <p>Report cyber financial fraud.</p>
+      <a href="https://cybercrime.gov.in/">Cyber Crime Portal</a>
+    </article>
+
+    <article class="card">
+      <h3>⚖️ Legal Aid</h3>
+      <p><strong>15100</strong></p>
+      <p>National Legal Aid Helpline (verify current availability).</p>
+      <a href="https://nalsa.gov.in/">NALSA Website</a>
+    </article>
+
+    <article class="card">
+      <h3>🛍️ Consumer Help</h3>
+      <p><strong>1915</strong></p>
+      <p>Consumer grievance assistance.</p>
+      <a href="https://consumerhelpline.gov.in/">Consumer Helpline</a>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2 data-i18n="faqTitle">Frequently Asked Questions</h2>
+
+  <details>
+    <summary>What is Nyaya Sahayak?</summary>
+    <p>Nyaya Sahayak is a legal awareness prototype designed to make basic legal information easier to understand and access.</p>
+  </details>
+
+  <details>
+    <summary>Can I get free legal assistance?</summary>
+    <p>Eligible people can seek free legal services through Legal Services Authorities. Contact NALSA or your local legal services authority for guidance.</p>
+  </details>
+
+  <details>
+    <summary>Can I file an official complaint through this website?</summary>
+    <p>No. This student prototype does not currently file complaints with police, courts or government departments.</p>
+  </details>
+
+  <details>
+    <summary>What should I do if I experience cyber fraud?</summary>
+    <p>Contact 1930 promptly for cyber financial fraud assistance and use the official cybercrime reporting portal.</p>
+  </details>
+
+  <details>
+    <summary>Is the information on this website legal advice?</summary>
+    <p>No. This website provides general legal awareness and is not a substitute for advice from a qualified lawyer.</p>
+  </details>
+</section>
+
+</main>
+
+<footer class="footer">
+  <h3>⚖️ Nyaya Sahayak</h3>
+  <p>Legal awareness should be accessible to everyone.</p>
+  <p>Educational student project | Not an official legal service</p>
+  <p>© 2026 Nyaya Sahayak</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
